@@ -318,7 +318,7 @@ section {
 
 /* Current Section */
 .current {
-    margin-bottom: 1rem; /* 16px */
+    margin-bottom: 32px; /* 16px */
 }
 
 .current p {
