@@ -168,7 +168,7 @@ section {
 .project-card {
     background-color: var(--card-background);
     border-radius: 16px;
-    padding: 16px;
+    padding: 16px 16px 32px;
     width: 399px;
     transition: background-color 0.2s ease;
     position: relative;
@@ -184,7 +184,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding-top: 55px;
+    padding-top: 0;
 }
 
 .project-image {
