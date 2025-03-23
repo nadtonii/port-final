@@ -190,7 +190,7 @@ section {
 .project-image {
     width: 100%;
     height: auto;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .read-time {
@@ -200,11 +200,11 @@ section {
     background-color: var(--background-color);
     padding: 6px 8px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--primary-color);
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto 8px;
     text-transform: lowercase;
 }
 
