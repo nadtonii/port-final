@@ -503,10 +503,11 @@ footer {
 .figma-button {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     background-color: rgb(47, 51, 63);
     color: white;
     text-decoration: none;
-    padding: 0;
+    padding: 0 16px;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 400;
@@ -525,8 +526,7 @@ footer {
     gap: 0;
     width: 14px;
     height: 21px;
-    margin-left: 16px;
-    margin-top: 10px;
+    flex-shrink: 0;
 }
 
 .figma-icon div:nth-child(1) {
@@ -555,7 +555,7 @@ footer {
 
 .figma-button span {
     margin-left: 8px;
-    margin-top: 11px;
+    flex-shrink: 1;
     height: 19px;
     width: 118px;
 } 
