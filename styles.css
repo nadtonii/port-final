@@ -28,7 +28,7 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 128px 512px;
+    padding: 512px 512px 128px;
     position: relative;
     display: flex;
     justify-content: center;
