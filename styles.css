@@ -28,7 +28,7 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 512px 512px 128px;
+    padding: 512px 512px 16px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -414,7 +414,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 1440px) {
     .container {
-        padding: 128px 512px;
+        padding: 512px 512px 16px;
     }
 }
 
