@@ -318,7 +318,8 @@ section {
 
 /* Current Section */
 .current {
-    margin-bottom: 32px; /* 16px */
+    margin-top: 64px;
+    margin-bottom: 4px; /* 16px */
 }
 
 .current p {
