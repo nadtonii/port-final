@@ -563,21 +563,16 @@ footer {
 }
 
 .read-time {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--background-color);
-    padding: 10px 16px;
+    padding: 6px 8px;
     border-radius: 30px;
     font-size: 14px;
     font-weight: 500;
     color: var(--primary-color);
-    position: absolute;
-    top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    width: 111px;
-    height: 39px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: fit-content;
+    margin: 0 auto 16px;
+    text-transform: lowercase;
 } 
