@@ -449,7 +449,7 @@ footer {
     }
     
     h1, h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .drawing {
@@ -457,11 +457,11 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 24px;
     }
 
     .nav-links {
@@ -478,11 +478,11 @@ footer {
     }
 
     .values-content {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .current p {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .copyright p {
