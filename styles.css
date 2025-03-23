@@ -420,7 +420,7 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        padding: 64px 24px;
+        padding: 512px 24px 16px;
     }
     
     main {
@@ -489,7 +489,7 @@ footer {
 
 @media (max-width: 480px) {
     .container {
-        padding: 32px 24px;
+        padding: 512px 24px 16px;
     }
     
     main {
