@@ -492,4 +492,70 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.figma-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.figma-button {
+    display: flex;
+    align-items: center;
+    background-color: rgb(47, 51, 63);
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 172px;
+    height: 41px;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-transform: lowercase;
+    letter-spacing: -0.03em;
+}
+
+.figma-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 7px);
+    grid-template-rows: repeat(3, 7px);
+    gap: 0;
+    width: 14px;
+    height: 21px;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+.figma-icon div:nth-child(1) {
+    background-color: rgb(242, 78, 30);
+}
+
+.figma-icon div:nth-child(2) {
+    background-color: rgb(255, 114, 98);
+}
+
+.figma-icon div:nth-child(3) {
+    background-color: rgb(162, 89, 255);
+}
+
+.figma-icon div:nth-child(4) {
+    background-color: rgb(26, 188, 254);
+}
+
+.figma-icon div:nth-child(5) {
+    background-color: rgb(10, 207, 131);
+}
+
+.figma-icon div:nth-child(6) {
+    background-color: rgb(26, 188, 254);
+}
+
+.figma-button span {
+    margin-left: 8px;
+    margin-top: 11px;
+    height: 19px;
+    width: 118px;
 } 
