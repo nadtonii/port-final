@@ -610,11 +610,11 @@ footer {
     z-index: 9999;
     opacity: 1;
     transition: opacity 0.5s ease-out;
+    pointer-events: none; /* Allow clicking through while fading out */
 }
 
 .loader-overlay.hidden {
     opacity: 0;
-    pointer-events: none;
 }
 
 .loader-content {

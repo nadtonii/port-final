@@ -1,3 +1,22 @@
+// Handle loading screen
+function handleLoader() {
+    const loader = document.querySelector('.loader-overlay');
+    
+    // Hide loader when all content is loaded
+    window.addEventListener('load', () => {
+        // Add a small delay to ensure smooth transition
+        setTimeout(() => {
+            loader.classList.add('hidden');
+            // Remove loader from DOM after transition
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 500); // Match this with the CSS transition time
+            // Start other animations after loader is hidden
+            initLoadAnimations();
+        }, 1000); // Show loader for at least 1 second
+    });
+}
+
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
@@ -167,7 +186,7 @@ function initContactButtonAnimations() {
 
 // Initialize all animations
 document.addEventListener('DOMContentLoaded', () => {
-    initLoadAnimations();
+    handleLoader();
     initProjectAnimations();
     initParagraphAnimations();
     initSmoothScroll();
