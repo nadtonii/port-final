@@ -491,8 +491,8 @@ footer {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    width: 134px;
-    height: 40.647px;
+    width: 172px;
+    height: 41px;
     margin: 0 auto;
     white-space: nowrap;
     text-transform: lowercase;
@@ -501,13 +501,15 @@ footer {
 }
 
 .figma-icon {
-    width: 20px;
-    height: 20.647px;
+    width: 14px;
+    height: 21px;
     object-fit: contain;
+    margin-left: 16px;
 }
 
-.figma-button img {
-    margin-top: 0.824px;
+.figma-button span {
+    margin-top: 11px;
+    margin-left: 38px;
 }
 
 .read-time {
