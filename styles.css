@@ -350,21 +350,19 @@ footer {
     position: fixed;
     left: 0;
     width: 100%;
-    height: 256px;
+    height: 32px;
     z-index: 1000;
     pointer-events: none;
 }
 
 .blur-overlay.top {
     top: 0;
-    background: linear-gradient(180deg, var(--background-color) 0%, var(--background-color) 25%, rgba(255, 247, 235, 0) 100%);
-    backdrop-filter: blur(5px);
+    background: linear-gradient(180deg, var(--background-color) 0%, rgba(255, 247, 235, 0.8) 50%, rgba(255, 247, 235, 0) 100%);
 }
 
 .blur-overlay.bottom {
     bottom: 0;
-    background: linear-gradient(0deg, var(--background-color) 0%, var(--background-color) 25%, rgba(255, 247, 235, 0) 100%);
-    backdrop-filter: blur(5px);
+    background: linear-gradient(0deg, var(--background-color) 0%, rgba(255, 247, 235, 0.8) 50%, rgba(255, 247, 235, 0) 100%);
 }
 
 /* Responsive Design */
@@ -426,7 +424,7 @@ footer {
     }
 
     .blur-overlay {
-        height: 100px;
+        height: 32px;
     }
 }
 
@@ -465,7 +463,7 @@ footer {
     }
 
     .blur-overlay {
-        height: 80px;
+        height: 32px;
     }
 }
 
