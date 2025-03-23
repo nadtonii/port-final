@@ -483,7 +483,7 @@ footer {
 .figma-button {
     display: flex;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: #2F333F;
     color: white;
     text-decoration: none;
     padding: 10px 16px;
@@ -501,15 +501,43 @@ footer {
 }
 
 .figma-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 7px);
+    grid-template-rows: repeat(3, 7px);
+    gap: 0;
     width: 14px;
     height: 21px;
-    object-fit: contain;
     margin-left: 16px;
 }
 
+.figma-icon div:nth-child(1) {
+    background-color: #F24E1E;
+}
+
+.figma-icon div:nth-child(2) {
+    background-color: #FF7262;
+}
+
+.figma-icon div:nth-child(3) {
+    background-color: #A259FF;
+}
+
+.figma-icon div:nth-child(4) {
+    background-color: #1ABCFE;
+}
+
+.figma-icon div:nth-child(5) {
+    background-color: #0ACF83;
+}
+
+.figma-icon div:nth-child(6) {
+    background-color: #1ABCFE;
+}
+
 .figma-button span {
-    margin-top: 11px;
-    margin-left: 38px;
+    display: inline-block;
+    margin-left: 8px;
+    line-height: 41px;
 }
 
 .read-time {
