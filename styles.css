@@ -220,28 +220,31 @@ section {
 .case-study-btn {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
     padding: 10px 16px;
     border-radius: 30px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
-    width: fit-content;
-    min-width: 153px;
+    width: 134px;
+    height: 40.647px;
     margin: 0 auto;
     white-space: nowrap;
     text-transform: lowercase;
     letter-spacing: -0.03em;
+    gap: 8px;
 }
 
 .case-study-icon {
     width: 20px;
-    height: 20px;
+    height: 20.647px;
     object-fit: contain;
+}
+
+.case-study-btn img {
+    margin-top: 0.824px;
 }
 
 /* Values Section */
