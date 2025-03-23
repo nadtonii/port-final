@@ -484,7 +484,7 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 8px;
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
