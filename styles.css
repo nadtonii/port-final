@@ -483,32 +483,31 @@ footer {
 .figma-button {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
     padding: 10px 16px;
     border-radius: 30px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
-    width: fit-content;
-    min-width: 153px;
+    width: 134px;
+    height: 40.647px;
+    margin: 0 auto;
     white-space: nowrap;
     text-transform: lowercase;
     letter-spacing: -0.03em;
-    transition: background-color 0.2s ease;
-}
-
-.figma-button:hover {
-    background-color: #262932;
+    gap: 8px;
 }
 
 .figma-icon {
     width: 20px;
-    height: 20px;
+    height: 20.647px;
     object-fit: contain;
+}
+
+.figma-button img {
+    margin-top: 0.824px;
 }
 
 .read-time {
