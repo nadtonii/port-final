@@ -51,8 +51,8 @@ function initLoadAnimations() {
         duration: 0.6
     }, "-=0.4");
     
-    // Make sure project cards are fully visible immediately
-    gsap.set(".project-card", { opacity: 1, y: 0 });
+    // Make sure all elements are fully visible immediately
+    gsap.set(".project-card, .values-content p", { opacity: 1, y: 0 });
 }
 
 // Project cards animation
@@ -91,61 +91,13 @@ function initProjectAnimations() {
     });
 }
 
-// Paragraph animations
-function initParagraphAnimations() {
-    // Animate each paragraph in the values section
-    gsap.utils.toArray('.values-content p').forEach(paragraph => {
-        gsap.from(paragraph, {
-            scrollTrigger: {
-                trigger: paragraph,
-                start: "top 85%",
-                end: "bottom 15%",
-                toggleActions: "play none none reverse"
-            },
-            y: 20,
-            opacity: 0,
-            duration: 0.8,
-            ease: "power2.out"
-        });
-    });
-}
-
-// Smooth scroll animation for navigation
-function initSmoothScroll() {
-    const navLinks = document.querySelectorAll('.nav-links a');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const target = document.querySelector(link.getAttribute('href'));
-            
-            gsap.to(window, {
-                duration: 1,
-                scrollTo: target,
-                ease: "power3.inOut"
-            });
-        });
-    });
-}
-
-// Header background animation
+// Header styling
 function initHeaderAnimation() {
     const header = document.querySelector('header');
-    
-    ScrollTrigger.create({
-        start: "top -100",
-        end: 99999,
-        toggleClass: {
-            targets: header,
-            className: "header-scrolled"
-        },
-        onUpdate: (self) => {
-            gsap.to(header, {
-                backgroundColor: self.isActive ? "rgba(255, 247, 235, 0.95)" : "rgba(255, 247, 235, 1)",
-                backdropFilter: self.isActive ? "blur(10px)" : "blur(0px)",
-                duration: 0.3
-            });
-        }
+    // Set initial state
+    gsap.set(header, {
+        backgroundColor: "rgba(255, 247, 235, 1)",
+        backdropFilter: "blur(0px)",
     });
 }
 
@@ -176,8 +128,6 @@ function initContactButtonAnimations() {
 document.addEventListener('DOMContentLoaded', () => {
     handleLoader();
     initProjectAnimations();
-    initParagraphAnimations();
-    initSmoothScroll();
     initHeaderAnimation();
     initContactButtonAnimations();
 }); 
