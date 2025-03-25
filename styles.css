@@ -111,28 +111,23 @@ nav {
     border-radius: 50%;
 }
 
-/* Custom styles for Contra button to match contact links */
-.contra-hire-me-button {
-    height: 42px;
-    display: flex;
-    align-items: center;
+/* Custom styles for Contra button */
+.contra-btn {
+    width: 110px;
+    height: 41px;
+    padding: 10px 12px;
+    background-color: #F7EDE0;
+    border-radius: 1.875rem;
 }
 
-.contra-hire-me-button button {
-    background-color: #F7EDE0 !important;
-    border-radius: 1.875rem !important;
-    font-size: var(--small-size) !important;
-    font-weight: 500 !important;
-    text-transform: lowercase !important;
-    font-family: var(--font-primary) !important;
-    color: var(--primary-color) !important;
-    padding: 0.625rem 0.75rem !important;
-    height: 41px !important;
-    transition: background-color 0.2s ease !important;
+.contra-btn:hover {
+    background-color: #f2e5d4;
 }
 
-.contra-hire-me-button button:hover {
-    background-color: #f2e5d4 !important;
+.contra-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
 .nav-links {
