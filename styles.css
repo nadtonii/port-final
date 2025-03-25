@@ -38,7 +38,7 @@ body {
 .container {
     max-width: 90rem; /* 1440px */
     margin: 0 auto;
-    padding: clamp(10rem, 15vw, 16rem) var(--container-padding) 1rem; /* 256px -> rem */
+    padding: 4rem var(--container-padding) 1rem; /* 64px top padding */
     position: relative;
     display: flex;
     justify-content: center;
@@ -462,13 +462,13 @@ footer {
 /* Responsive Design */
 @media (max-width: 1440px) {
     .container {
-        padding: 256px 512px 16px;
+        padding: 4rem var(--container-padding) 1rem;
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 256px 24px 16px;
+        padding: 4rem 1.5rem 1rem;
     }
     
     main {
@@ -537,7 +537,7 @@ footer {
 
 @media (max-width: 480px) {
     .container {
-        padding: 256px 24px 16px;
+        padding: 4rem 1.5rem 1rem;
     }
     
     main {
