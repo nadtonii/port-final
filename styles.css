@@ -207,8 +207,6 @@ section {
     width: 100%;
     height: auto;
     margin-bottom: 32px;
-    object-fit: cover;
-    aspect-ratio: 1.25;
 }
 
 .read-time {
