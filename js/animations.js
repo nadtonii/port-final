@@ -50,25 +50,13 @@ function initLoadAnimations() {
         opacity: 0,
         duration: 0.6
     }, "-=0.4");
+    
+    // Make sure project cards are fully visible immediately
+    gsap.set(".project-card", { opacity: 1, y: 0 });
 }
 
 // Project cards animation
 function initProjectAnimations() {
-    // Stagger animation for project cards
-    gsap.from(".project-card", {
-        scrollTrigger: {
-            trigger: ".projects",
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse"
-        },
-        y: 40,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: "power3.out"
-    });
-
     // Hover animations for project cards
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => {
