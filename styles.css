@@ -92,7 +92,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 64px 512px 16px;
+    padding: 2rem var(--container-padding);
     background-color: var(--background-color);
     z-index: 1000;
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
@@ -106,7 +106,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
+    max-width: 26rem;
     margin: 0 auto;
 }
 
@@ -115,6 +115,18 @@ nav {
     height: 42px;
     background-color: var(--accent-color);
     border-radius: 50%;
+}
+
+/* Remove the duplicate logo from main content */
+main .logo {
+    display: none;
+}
+
+/* Add styles for the Contra button container */
+.contra-hire-me-button {
+    height: 42px;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
